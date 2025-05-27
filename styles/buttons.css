@@ -1,0 +1,74 @@
+/* .consult__link-video {
+    text-align: center;
+    text-decoration: none;
+    margin-right: 1.5em;
+    padding: 13px;
+    border-radius: 8px;
+    background-color: var(--orange);
+    font-size: 14px;
+    color: var(--white);
+    box-shadow: 0px 4px 16px 0px rgba(255, 176, 80, 0.16);
+}
+
+.consult__link-audio {
+    text-align: center;
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-border);
+    background-color: var(--white);
+    font-size: 14px;
+    color: var(--black);
+}
+.consult__link-local {
+    padding: 1em 1em;
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--white);
+    text-align: center;
+    background-color: var(--blue);
+    box-shadow: 0px 4px 16px 0px rgba(72, 148, 255, 0.16);
+    border-radius: 8px;
+} */
+
+/* Base de todos os botões */
+.consult__link-video,
+.consult__link-audio,
+.consult__link-local {
+    flex: 1 1 0; /* ocupa todo o espaço disponível */
+    text-align: center;
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box; /* essencial */
+    white-space: nowrap;
+    min-width: 0;
+}
+
+/* Cores específicas (mantendo as suas) */
+.consult__link-video {
+    background-color: var(--orange);
+    color: var(--white);
+    box-shadow: 0px 4px 16px 0px rgba(255, 176, 80, 0.16);
+    border: none;
+    margin-right: 1em;
+}
+
+.consult__link-audio {
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--gray-border);
+}
+
+.consult__link-local {
+    background-color: var(--blue);
+    color: var(--white);
+    box-shadow: 0px 4px 16px 0px rgba(72, 148, 255, 0.16);
+}
+
+.consult__link-audio,
+.consult__link-local,
+.consult__link-video {
+    font-size: 16px;
+}

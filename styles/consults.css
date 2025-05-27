@@ -1,0 +1,105 @@
+.consult__container {
+    margin: 1em 0 0 0;
+    padding: 1em;
+    background-color: var(--white);
+    border-radius: 8px;
+    min-width: 300px;
+}
+.consult__patient-container {
+    display: flex;
+}
+.consult__data {
+    padding: 1em 0 0 1em;
+    font-weight: 700;
+    color: var(--black);
+    background: var(--white-03opc);
+}
+
+.consult__patient {
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.consult__patient-avatar {
+    margin-right: 1em;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+}
+
+.consult__info-name {
+    margin-bottom: 0.5em;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--black);
+}
+
+.icon {
+    padding-right: 0.5em;
+}
+.consult__info-local {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.consult__line {
+    background-color: var(--black);
+    opacity: 0.1;
+    margin: 0 -1em;
+}
+.consult__links {
+    flex: 1 1 0%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.consult__container-data {
+    padding: 0.5em 0;
+}
+
+.consult__container-data-hora {
+    color: var(--black);
+    font-family: var(--main-font);
+    font-size: 12px;
+}
+
+.consult__list-pai {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+@media screen and (min-width: 768px) {
+    .consult__list-pai {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .consult__info-name {
+        padding-top: 0.5em;
+        margin-bottom: 0.2em;
+        font-size: 18px;
+    }
+    .consult__patient-avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 24px;
+    }
+    .consult__container-data-hora {
+        font-size: 14px;
+        color: var(--black);
+        font-family: var(--main-font);
+    }
+    .consult__list-pai {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .consult__data {
+        margin-top: 1em;
+        padding: 2em 0 2em 5em;
+    }
+}

@@ -1,0 +1,45 @@
+.header__perfil {
+    align-items: center;
+    text-align: start;
+    display: flex;
+    padding: 2em 1em;
+}
+
+.header__avatar {
+    width: 57px;
+    height: 57px;
+    border-radius: 57px;
+}
+.header__welcome {
+    margin: 0 1em;
+}
+
+.header__title {
+    color: var(--black);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+.header__text {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+@media screen and (min-width: 1400px) {
+    .header {
+        margin: 2em;
+    }
+    .header__avatar {
+        width: 96px;
+        height: 96px;
+        border-radius: 96px;
+    }
+    .header__title {
+        font-size: 31px;
+        margin-bottom: 0.2em;
+    }
+    .header__text {
+        font-size: 18px;
+    }
+}
