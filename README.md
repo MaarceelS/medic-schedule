@@ -4,53 +4,44 @@
 
 ## 📑 Descrição
 
-O **Medic Schedule** é um projeto desenvolvido como parte do desafio de responsividade [**#7DaysOfCode**](https://7daysofcode.io/matricula/responsividade) da Alura. O desafio consistia em criar uma interface responsiva que auxilie médicos na visualização de suas agendas de pacientes.
+O **Medic Schedule** é um projeto desenvolvido como parte do desafio de responsividade [**#7DaysOfCode**](https://7daysofcode.io/matricula/responsividade) da Alura. O desafio tinha como objetivo criar uma interface web responsiva que auxilie médicos na visualização de suas agendas de pacientes.
 
-A proposta do aplicativo é oferecer uma visão organizada e eficiente dos compromissos médicos, permitindo consultar os atendimentos do dia ou da semana, além de facilitar o agendamento de novas consultas. Para isso, conta com um menu de navegação fixo na parte inferior da tela e um botão flutuante que, ao ser acionado, exibe opções adicionais para agendamento de consultas de forma rápida e intuitiva.
+A aplicação permite que médicos acompanhem seus atendimentos diários e semanais, contando com um menu na parte inferior para facilitar a navegação e um botão flutuante agendamento de novas consultas.
 
 ## 🚀 Tecnologias Utilizadas
 
-- **HTML5**
-- **CSS3**
-- **JavaScript**
-- **Google Fonts**
-- **Flexbox e Media Queries (Responsividade)**
+- HTML5  
+- CSS3  
+- JavaScript  
+- Google Fonts  
+- Flexbox e Media Queries para responsividade  
 
 ## 🎯 Funcionalidades
 
-- ✅ Interface 100% responsiva para mobile, tablet e desktop.
-- ✅ Visualização da agenda de pacientes:
-  - ✔️ Consultas do **dia**
-  - ✔️ Consultas da **semana**
-- ✅ Cards exibindo informações essenciais de cada paciente:
-  - Nome do paciente
-  - Horário da consulta
-  - Modalidade (presencial, online, etc.)
-- ✅ **Menu fixo inferior** para navegação entre diferentes páginas do aplicativo.
-- ✅ **Botão flutuante interativo**:
-  - Abre um overlay com duas opções de ações:
-    - ➕ **Agendar nova consulta futura**
-    - ➕ **Adicionar outro tipo de atendimento**
-- ✅ Interface intuitiva, organizada e otimizada para melhorar a experiência dos profissionais da área médica.
+- Interface responsiva para dispositivos móveis, tablets e desktop  
+- Visualização das proximas consultas
+- Cards contendo informações como nome do paciente, horário e modalidade da consulta  
+- Menu inferior para navegação
+- Botão flutuante que abre um overlay com opções para agendar novas consultas
+- Botão flutuante para novos agendamentos
 
 ## 📱 Layout e Responsividade
 
-Todo o layout foi desenvolvido com foco em responsividade, utilizando **Flexbox** e **Media Queries**, garantindo uma experiência consistente e agradável em qualquer dispositivo — seja no desktop, tablet ou smartphone.
+O projeto foi desenvolvido com foco total em responsividade, utilizando recursos como **Flexbox** e **Media Queries**. A interface se adapta de maneira eficiente a diferentes tamanhos de tela, proporcionando uma experiência consistente e intuitiva em qualquer dispositivo.
 
-A navegação é facilitada por um **menu inferior fixo**, que mantém as opções sempre acessíveis, e um **botão flutuante**, que melhora a usabilidade ao permitir acesso rápido às ações de agendamento.
+O menu inferior fixo garante fácil acesso às páginas principais, enquanto o botão flutuante melhora a usabilidade, permitindo que o médico acesse rapidamente funções adicionais sem comprometer a navegação.
 
 ## 🧠 Aprendizados
 
-Durante o desenvolvimento deste projeto, foram praticados e aprofundados conceitos como:
+Durante o desenvolvimento deste projeto, foram aplicados diversos conceitos importantes para construção de interfaces modernas, como:
 
-- Estruturação semântica com **HTML5**.
-- Criação de layouts modernos, escaláveis e responsivos com **CSS3**.
-- Manipulação de elementos com **JavaScript** para interatividade (overlay e botões flutuantes).
-- Boas práticas de design responsivo, acessibilidade e foco na experiência do usuário.
-- Organização de componentes e informações para fluxos profissionais.
+- Estruturação semântica com HTML  
+- Criação de layouts flexíveis e responsivos utilizando **Flexbox** e **Media Queries**  
+- Organização de componentes e hierarquia visual com CSS  
+- Aplicação de interatividade e manipulação de elementos com JavaScript  
+- Desenvolvimento de soluções centradas na experiência do usuário, especialmente em ambientes mobile-first  
+
 
 ## 🔗 Acesso ao Projeto
-
-Acesse o projeto através do link abaixo:
 
 [🔗 Visualizar Projeto](https://medic-schedule.vercel.app/)
