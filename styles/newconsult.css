@@ -1,0 +1,196 @@
+.new__consult-container {
+	display: flex;
+	margin: 1em 0 0 6em;
+	flex-direction: column;
+	padding: 0 2em;
+	gap: 12px;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.new__consult-title {
+	margin-top: 1em;
+	align-items: start;
+	font-size: 16px;
+	color: var(--black);
+	font-family: var(--main-font);
+	font-weight: 700;
+	padding: 2em 0 2em 8em;
+	background: var(--white-03opc);
+}
+
+.new__consult-container input {
+	border: 1px solid var(--gray-border);
+	border-radius: 8px;
+	background-color: var(--white);
+	font-size: 16px;
+	font-weight: 400;
+	font-family: var(--main-font);
+	padding-left: 1em;
+}
+
+.new__consult-container input[type='text'],
+.new__consult-container input[type='date'],
+.new__consult-container input[type='time'] {
+	width: 238px;
+	height: 56px;
+}
+
+.new__consult-container input[type='text']:hover,
+.new__consult-container input[type='date']:hover,
+.new__consult-container input[type='time']:hover {
+	border: 1px solid var(--gray-border-hover);
+}
+
+.new__consult-container input[type='date']:hover,
+.new__consult-container input[type='time']:hover{
+	cursor: text;
+}
+.new__consult-container input[type='text']::placeholder,
+.new__consult-container input[type='date']::placeholder,
+.new__consult-container input[type='time']::placeholder {
+	font-size: 16px;
+	font-weight: 400;
+	font-family: var(--main-font);
+	color: var(--gray-placeholder);
+}
+
+.new__consult-container input[type='text']:hover::placeholder,
+.new__consult-container input[type='text']:hover::placeholder,
+.new__consult-container input[type='text']:hover::placeholder {
+	color: var(--gray-hover);
+}
+
+.new__consult-container input[type='text']:focus,
+.new__consult-container input[type='time']:focus,
+.new__consult-container input[type='date']:focus {
+	border: 2px solid var(--blue-focused);
+	outline: none;
+}
+
+.new__consult-container label {
+	margin: 0.5em 0;
+	font-family: var(--main-font);
+	font-size: 16px;
+	font-weight: 400;
+}
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0.2em;
+}
+
+.error-message {
+	padding: 0.2em 0 0 0.1em;
+	color: var(--error);
+	font-weight: 400;
+	font-family: inherit;
+	font-size: 12px;
+	margin-top: 4px;
+	display: none;
+}
+.error-message.active {
+	display: block;
+}
+.input-error {
+	border: 1px solid var(--error-border) !important;
+}
+
+.new__consult-radio input:invalid:not(:placeholder-shown) ~ .error-message {
+	display: block;
+}
+.new__consult-radio {
+	padding-left: 1em;
+	color: var(--preto);
+}
+
+.radio-options {
+	display: inline-flex;
+	align-items: center;
+	padding-left: 1em;
+	gap: 3px;
+	text-align: center;
+	color: var(--preto);
+	cursor: pointer;
+}
+
+.radio-options input[type='radio'] {
+	bottom: 2px;
+	appearance: none;
+	-webkit-appearance: none;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	border: 2px solid var(--radio-off);
+	background-color: transparent;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+}
+.radio-options input[type='radio']:checked {
+	border-color: var(--blue);
+	background-color: transparent;
+}
+
+.radio-options input[type='radio']:checked::before {
+	content: '';
+	display: block;
+	position: absolute;
+	background-color: var(--blue);
+	border-radius: 50%;
+	width: 12px;
+	height: 12px;
+	left: 4px;
+	top: 4px;
+}
+
+.radio-options input[type='radio']::after {
+	content: '';
+	position: absolute;
+	top: -7.5px;
+	left: -8px;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background-color: var(--radio-hover);
+	opacity: 0;
+	transition: opacity 0.2s ease;
+	z-index: 0;
+}
+.radio-options input[type='radio']:hover::after {
+	opacity: 0.04; /* ou 0.15 se quiser mais visível */
+}
+.radio-options input[type='radio']:active::after {
+	opacity: 0.16;
+	transform: scale(1);
+}
+
+.radio-options input[type='radio']:focus::after {
+	opacity: 0.08;
+}
+
+.form-group-container {
+	gap: 8px;
+	display: flex;
+	flex-direction: column;
+}
+
+.new__consult-container input[type='submit']{
+	appearance: none;
+	padding: 1em;
+	font-size: 16px;
+	font-weight: 700;
+	color: var(--white);
+	background: var(--blue-500);
+	box-shadow: 0px 4px 16px 0px rgba(72, 148, 255, 0.16);
+	cursor: pointer;
+}
+.new__consult-container input[type='submit']:hover{
+	background-color: var(--blue-600);
+}
+
+.new__consult-container input[type='submit']:active {
+	transform: scale(0.98);
+	border: 2px solid var(--blue-400);
+	background-color: var(--blue-700);
+}

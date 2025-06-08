@@ -1,5 +1,5 @@
 .consult__container {
-    margin: 1em 0 0 0;
+    margin: 1em 1em 0 0;
     padding: 1em;
     background-color: var(--white);
     border-radius: 8px;
@@ -73,6 +73,9 @@
     margin: 0 auto;
     padding: 0 1rem;
 }
+.consult__chat{
+    cursor: pointer;
+}
 @media screen and (min-width: 768px) {
     .consult__list-pai {
         grid-template-columns: repeat(2, 1fr);
@@ -80,6 +83,7 @@
 }
 
 @media screen and (min-width: 1400px) {
+
     .consult__info-name {
         padding-top: 0.5em;
         margin-bottom: 0.2em;
@@ -97,9 +101,10 @@
     }
     .consult__list-pai {
         grid-template-columns: repeat(3, 1fr);
+        margin-left: 1em
     }
     .consult__data {
         margin-top: 1em;
-        padding: 2em 0 2em 5em;
+        padding: 2em 0 2em 2em;
     }
 }

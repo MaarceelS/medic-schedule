@@ -3,26 +3,53 @@
 @import url(styles/consults.css);
 @import url(styles/button-floating.css);
 @import url(styles/buttons.css);
+@import url(styles/newconsult.css);
 
 :root {
-    --white-opc: linear-gradient(166deg, #f8f4ff 0%, #eff0f4 100%);
-    --white: #fff;
-    --white-03opc:rgba(255, 255, 255, 0.3);
-    --preto: #000;
-    --black: #464646;
-    --gray: #a3a3a3;
-    --gray-border: #ECECEC;
-    --orange: #ffb050;
-    --blue: #4894ff;
-    --main-font: "Montserrat";
+	--white-opc: linear-gradient(166deg, #f8f4ff 0%, #eff0f4 100%);
+	--white: #fff;
+	--white-03opc: rgba(255, 255, 255, 0.3);
+	--preto: #000;
+	--black: #464646;
+	--gray: #a3a3a3;
+	--gray-label: #898989;
+	--gray-placeholder: #cfcfcf;
+	--gray-hover: #adadad;
+	--gray-border: #ececec;
+	--gray-border-hover: #cfcfcf;
+	--orange: #ffb050;
+	--orange-hover: #ff991d;
+	--blue: #4894ff;
+	--blue-hover: #116ff3;
+	--blue-focused: #4894FF;
+	--main-font: 'Montserrat';
+	--radio-off: #909090;
+	--radio-hover: #4894FF;
+	--radio-pressed: #4894FF29;
+	--error: #CE0303;
+	--error-border: #DE0000;
+	--blue-400: #57A4FF;
+	--blue-500: #4894FF;
+	--blue-600: #4786F0;
+	--blue-700: #4373DC;
+	--blue-800: #4062C9;
+
 }
 
 body {
-    background: var(--white-opc);
-    font-family: var(--main-font);
-    font-size: 16px;
-    font-weight: 500;
-    /* margin: 0; */
-    padding-bottom: 70px;
-    width: 100vw;
+	background: var(--white-opc);
+	font-family: var(--main-font);
+	font-size: 16px;
+	font-weight: 500;
+	padding-bottom: 70px;
+	overflow-x: hidden;
+}
+
+@media screen and (min-width: 1400px) {
+	body {
+		padding-left: 9em;
+	}
+	.conteudo {
+		flex: 1;
+	}
 }

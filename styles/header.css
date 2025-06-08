@@ -28,7 +28,10 @@
 
 @media screen and (min-width: 1400px) {
     .header {
-        margin: 2em;
+        margin: 0.8em 0 0 2.5em;
+    }
+    .header__perfil{
+        margin: 0 4em;
     }
     .header__avatar {
         width: 96px;

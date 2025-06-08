@@ -72,3 +72,10 @@
     z-index: 1000;
     display: none;
 }
+
+
+@media screen and (min-width: 1400px){
+    .button__floating{
+        display: none;
+    }
+}

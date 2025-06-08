@@ -54,17 +54,25 @@
     border: none;
     margin-right: 1em;
 }
-
+.consult__link-video:hover{
+    background-color: var(--orange-hover);
+}
 .consult__link-audio {
     background-color: var(--white);
     color: var(--black);
     border: 1px solid var(--gray-border);
+}
+.consult__link-audio:hover{
+    background-color: var(--gray-border);
 }
 
 .consult__link-local {
     background-color: var(--blue);
     color: var(--white);
     box-shadow: 0px 4px 16px 0px rgba(72, 148, 255, 0.16);
+}
+.consult__link-local:hover{
+    background-color: var(--blue-hover);
 }
 
 .consult__link-audio,
